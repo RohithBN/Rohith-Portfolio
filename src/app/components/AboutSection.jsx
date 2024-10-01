@@ -9,12 +9,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
+        <li>NextJs</li>
         <li>React</li>
+        <li>MongoDB</li>
+        <li>Appwrite</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Redux</li>
+        <li>AuthJS</li>
       </ul>
     ),
   },
@@ -23,8 +25,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Dayanada Sagar College of Engineering, Bangalore</li>
+        
       </ul>
     ),
   },
@@ -33,8 +35,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Complete Web Development Course</li>
+        <li>Azure Data & AI Masterclass</li>
+        <li>Python Fundamnetals Infosys Springboard</li>
       </ul>
     ),
   },
@@ -52,15 +55,16 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16  ">
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full w-full">
+          <h2 className="text-4xl font-bold  mb-4">  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-500">
+             <u>About Me</u>
+            </span></h2>
+          <p className="text-base lg:text-lg min-w-full">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with JavaScript, TypeScript,NextJs,React, Redux, Node.js, Express,MongoDB, Appwrite,
+             HTML, Tailwind CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>

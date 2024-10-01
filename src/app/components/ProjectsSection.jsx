@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "My Portfolio  Website built using React and  Tailwind CSS",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -16,47 +16,47 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Mystery-Message",
+    description: "Unique Application allowing users to send anonymous messages",
+    image: "/images/projects/MysteryMessage.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/1DS22IS120-RohithBN/Mystery-Message",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "BlogIt",
+    description: "A dynamic  blog application that allows users to create, edit, and delete blog posts",
+    image: "/images/projects/Blog.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/1DS22IS120-RohithBN/Blog-React",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "Expense Tracker",
+    description: "An  application that allows users to seamlessly track their expenses",
+    image: "/images/projects/Expense.jpeg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/1DS22IS120-RohithBN/Expense-Tracker",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "SmartCareConnect",
+    description: "A resource management System designed specifically for hospitals and vendors.",
+    image: "/images/projects/SCC.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/1DS22IS120-RohithBN/scc-2",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Notes Management App",
+    description: "An  application that allows users to create, edit, and delete notes",
+    image: "/images/projects/Notes.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/1DS22IS120-RohithBN/Notes-management-app",
     previewUrl: "/",
   },
 ];
@@ -82,7 +82,9 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-500">
+             My Projects
+            </span> 
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -94,11 +96,6 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
